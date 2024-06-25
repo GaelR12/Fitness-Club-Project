@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Info - Fitness Club</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Fitness Club</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="info.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h2 id="registrationForm">Registration Form</h2>
+    <div class="container">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fname">
+                    First Name:
+                    <input type="text" name="fname" id="fname" placeholder="First Name" required />
+                </label>
+                <label for="lname">
+                    Last Name:
+                    <input type="text" name="lname" id="lname" placeholder="Last Name" required />
+                </label>
+                <label for="email">
+                    Email:
+                    <input type="email" name="email" id="email" placeholder="Email" required />
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Reservation Request</legend>
+                <label for="teacher">
+                    Teacher:
+                    <select name="teacher" id="teacher" required>
+                        <option value="Tiffany Ford">Tiffany Ford</option>
+                        <option value="Kirsten Markley">Kirsten Markley</option>
+                        <option value="Renee Riley">Renee Riley</option>
+                    </select>
+                </label>
+                <label for="month">
+                    Month:
+                    <select name="month" id="month" required>
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+                </label>
+                <label for="day">
+                    Day:
+                    <input type="number" name="day" id="day" placeholder="Day" required />
+                </label>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Fitness Club. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
